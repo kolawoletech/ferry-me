@@ -5,7 +5,7 @@ import { contentHeaders } from '../auth/auth.headers';
 import { Observable } from 'rxjs/Rx';
 import { Auto } from './auto.class';
 
-const baseUrl = 'https://ferry-me.herokuapp.com/api/autos';
+const baseUrl = 'https://ferryme.auth0.com/api/v2/autos';
 
 @Injectable()
 export class AutoService {

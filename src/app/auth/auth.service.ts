@@ -13,7 +13,7 @@ export class AuthService {
     },
     auth: {
       responseType: 'token',
-      redirectUrl: 'https://ferry-me-web.herokuapp.com'
+      redirectUrl: 'https://ferryme.auth0.com/api/v2/users'
     },
     languageDictionary: {
       title: 'Have your rides on Ferry Me >:3'
@@ -37,7 +37,7 @@ export class AuthService {
       localStorage.setItem('profile', JSON.stringify(profile));
       localStorage.setItem('accessToken', authResult.accessToken);
       if(profile.signed_up){
-        console.log('Enjoy your journey on Speeroo, ' + profile.nickname);
+        console.log('Enjoy your journey on Ferry Me, ' + profile.nickname);
         this.userService.createUser({'name': profile.nickname, 'userId': profile.user_id, 'peerId': ''}).subscribe(data => {
           this.response = data.message;
           console.log(this.response);
