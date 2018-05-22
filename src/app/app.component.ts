@@ -9,7 +9,7 @@ import { AuthService } from './auth/auth.service'
 })
 
 export class AppComponent {
-  title = 'Welcome on Speeroo';
+  title = 'Welcome on Ferry Me';
 
   constructor(public router: Router, public auth: AuthService) {
   }

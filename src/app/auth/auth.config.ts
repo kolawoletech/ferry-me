@@ -4,6 +4,6 @@ interface AuthConfiguration {
 }
 
 export const AuthConfig: AuthConfiguration = {
-    clientID: 'LtOnNFXioXiQEeFYL9XQVxArR75qkRNn',
-    domain: 'lambdoid.auth0.com'
+    clientID: '6lT5KjBicBIedjoTuXU0t6c1I1aVr8OA',
+    domain: 'ferryme.auth0.com'
 };

@@ -13,10 +13,10 @@ export class AuthService {
     },
     auth: {
       responseType: 'token',
-      redirectUrl: 'https://speeroo.herokuapp.com'
+      redirectUrl: 'https://ferry-me-web.herokuapp.com'
     },
     languageDictionary: {
-      title: 'Have fun on Speeroo >:3'
+      title: 'Have your rides on Ferry Me >:3'
     }
   });
   response: any;
@@ -40,6 +40,7 @@ export class AuthService {
         console.log('Enjoy your journey on Speeroo, ' + profile.nickname);
         this.userService.createUser({'name': profile.nickname, 'userId': profile.user_id, 'peerId': ''}).subscribe(data => {
           this.response = data.message;
+          console.log(this.response);
         });
       } else {
         console.log('Welcome back, ' + profile.nickname);
