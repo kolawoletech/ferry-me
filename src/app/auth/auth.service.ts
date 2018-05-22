@@ -13,7 +13,7 @@ export class AuthService {
     },
     auth: {
       responseType: 'token',
-      redirectUrl: 'https://ferryme.auth0.com/api/v2/users'
+      redirectUrl: 'https://ferry-me-web.herokuapp.com/'
     },
     languageDictionary: {
       title: 'Have your rides on Ferry Me >:3'
